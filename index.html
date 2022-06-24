@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>RevealJS Video Branching</title>
+	<link rel="icon" type="image/svg+xml" href="icon.svg">
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/white.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	<style>
+		.left {
+			text-align: left;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-auto-animate>Slide0-0<video data-id="video" data-autoplay src="assets/Slide0-0.mp4"></video></section>
+			<section>
+				<section data-auto-animate>Slide1-0<video data-id="video" data-autoplay src="assets/Slide1-0.mp4"></video> </section>
+				<section data-auto-animate>Slide1-1<video data-id="video" data-autoplay src="assets/Slide1-1.mp4"></video></section>
+			</section>
+			<section>
+				<section data-auto-animate>Slide2-0<video data-id="video" data-autoplay src="assets/Slide2-0.mp4"></video> </section>
+				<section data-auto-animate>Slide2-1<video data-id="video" data-autoplay src="assets/Slide2-1.mp4"></video></section>
+				<section data-auto-animate>Slide2-2<video data-id="video" data-autoplay src="assets/Slide2-2.mp4"></video> </section>
+				<section data-auto-animate>Slide2-3<video data-id="video" data-autoplay src="assets/Slide2-3.mp4"></video> </section>
+			</section>
+			<section data-auto-animate>Slide3-0<video data-id="video" data-autoplay src="assets/Slide3-0.mp4"></video></section>
+
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script src="plugin/math/math.js"></script>
+
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX]
+		});
+	</script>
+</body>
+
+</html>
